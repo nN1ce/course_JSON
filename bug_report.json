@@ -1,1 +1,28 @@
-
+{
+    "ID": "3133597",
+    "Enviroment": "ocs@dobby",
+    "Title": "ОШИБКА в форме #101 ПРИЕМ ТОВАРОВ # при переходе по Enter на поле Линия ПО",
+    "Project": "wms-OCS-release-2.1.38.3-1.noarch (394.107)",
+    "Build": "2.1.38.3",
+    "Severity": "Major",
+    "Priority": "Normal",
+    "Status": "Open",
+    "Submitted by": "elukyanov",
+    "Assigned to": "vchertkov",
+    "Conditions":
+    {
+        "ПО 275180 Статус=В работе, Две Линии": [
+                "3793648, Линия=1, Товар=T-L-E-001, SO=A1,11111",
+                "3793649, Линия=2, Товар=T-L-E-001, SO=A2,22222" 
+        ]
+    },
+    "STR": [
+        "1. Произвести прием товара, в РДТ 3.Прием груза=>2.Прием по ПФ, ввести данные:НПО>275180, Товар>T-L-E-001 ",
+        "2. Маркер перешёл на поле Линия ПО>",
+        "3. По Enter перейти на поле СлСимвол"
+    ],
+    "Expected result": "переход на поле СлСимвол ",
+    "Actual result": "ошибка 'ERROR: processCommand exception on command: rdt( reflex( receive_start(20/14)'",
+    "Attachments": "ссылка_на_логи"   
+    
+}
